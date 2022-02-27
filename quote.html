@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+    <link rel="stylesheet" href="quote.css">
+</head>
+<body>
+  <form onsubmit="return validinput()">
+<div class="form">
+  <div class="title">
+  <label>Quote: </label> 
+  </div>
+  <div class="text">
+  <textarea cols="50" rows="5" id="msg"></textarea>
+  </div>
+  <div class="btn">
+  <button  type="submit">Quote</button>  
+  </div> 
+</div>
+</form>
+</body>
+<script type="text/javascript">
+  function validinput(){
+    var input = document.getElementById('msg').value;
+    if(input.replace(/\s/g, "").length<=0){
+      alert("No whitespace or emptyspaces allowed!");
+    }
+  }
+</script>
+</html>

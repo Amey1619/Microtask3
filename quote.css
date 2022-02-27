@@ -1,0 +1,20 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form{
+    margin: 2%;
+    padding: 2%;
+    background-color: aqua;
+}
+.title{
+    display: block;
+    margin-bottom: 1em;
+}
+.btn{
+    display: block;
+    margin-top: 1em;
+    font-family: sans-serif;
+    border-radius: 20%;
+    background: none;
+    color: white;
+}
