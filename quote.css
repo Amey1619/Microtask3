@@ -10,10 +10,9 @@
     margin-bottom: 1em;
 }
 .btn{
-    display: block;
-    margin-top: 1em;
+       margin-top: 1em;
     font-family: sans-serif;
     border-radius: 20%;
     background: none;
-    color: white;
+    color: black;
 }
