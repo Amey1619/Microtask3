@@ -17,7 +17,7 @@
   <label>Quote: </label> 
   </div>
   <div class="text">
-  <textarea cols="50" rows="5" id="msg"></textarea>
+  <textarea id="msg" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="btn">
   <button  type="submit" class="btn btn-primary">Quote</button>  
@@ -27,7 +27,7 @@
 </form>
 </body>
 <script type="text/javascript">
-  var letter=/^[a-zA-Z]*$/;
+  var letter=/^[a-zA-Z .!]*$/;
   function validinput(){
     var input = document.getElementById('msg').value;
     if(input.replace(/\s/g, "").length<=0){
