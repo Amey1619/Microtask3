@@ -27,18 +27,18 @@
 </form>
 </body>
 <script type="text/javascript">
-  var letter=/^[a-zA-Z .!]*$/;
+  var letter=/^[a-zA-Z .!]*$/;    //Regex expression
   function validinput(){
     var input = document.getElementById('msg').value;
-    if(input.replace(/\s/g, "").length<=0){
+    if(input.replace(/\s/g, "").length<=0){         // Prevent whitespace & empty spaces
       alert("No whitespace or emptyspaces allowed!");
       return false;
     }
     if(!input.match(letter)){
-      alert("Textfield must contain only alphabets!");
-      return false;
+      alert("Textfield must contain only alphabets!");   // matches the regex expression
+      return false;                 // alert the user if match fails
     }
-     return true && alert("Your submission is succesfully recieved!");    
+     return true && alert("Your submission is succesfully recieved!");    // If all parameters meets form submits
   }
 </script>
 </html>
